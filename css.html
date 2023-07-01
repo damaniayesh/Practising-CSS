@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Tutorial</title>
+    <style>
+        body{
+            background-color: pink;
+        }
+
+        /*Box Model*/
+        .content{
+            background-color: purple;
+            width: 500px;
+            height: 500px;
+        }
+
+        .box{
+            border: 4px solid red;
+            width: 300px;
+            height: 300px;
+            padding: 30px;
+            margin: 10px;
+            overflow: scroll;
+        }
+
+
+        /*Position*/
+        .parent{
+            position: relative;
+            width: 400px;
+            height: 400px;
+            background-color: purple;
+        }
+        .child{
+            position: absolute;
+            bottom: 10px;
+            right: 20px;
+            width: 150px;
+            height: 150px;
+            background-color: salmon;
+        }
+
+
+        /*Display Property*/
+        .parent1{
+            width: 500px;
+            height: 500px;
+            background-color: purple;
+            margin-top: 5px;
+        }
+
+        .child1{
+            width: 150px;
+            height:150px;
+            background-color: wheat;
+            margin: 5px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Box Model</h1>
+    <div class="box">
+        <div class="content"></div>
+    </div>
+    
+     <!--  Position  --> 
+    <h1>Position Property</h1>
+    <div class="parent">This is <strong>Relative Position.</strong> <br /> <strong>Before using absolute use RELATIVE position.</strong> 
+        <div class="child">This is <strong>ABSOLUTE POSITION.</strong></div>
+    </div>
+
+    <!-- Display -->
+    <h1>Display</h1>
+    <div class="parent1">
+        <span class="child1"></span>
+        <span class="child1"></span>
+        <span class="child1"></span>
+        <span class="child1"></span>
+    </div>
+</body>
+</html>
